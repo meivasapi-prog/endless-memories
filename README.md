@@ -1,2 +1,58 @@
 # endless-memories
-gatau lagi deh, aku akan kesepian kalo kakak lulus...
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terima kasih Kak Naura Faradisa!</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+      font-family: Monotype Corsiva, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      color: #721c24;
+      font-size: 2em;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      background: #f5c6cb;
+      color: #721c24;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #f1b0b7;
+    }
+    .message {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #491217;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Halo! Klik tombol di bawah ini</h1>
+  <button onclick="tampilkanPesan()">Klik untuk Ucapan</button>
+  <div class="message" id="pesan">
+    <p>Terima kasih banyak! udah mengubah diriku dari introvert menjadi extrovert. Aku sayang kak naura, kakel ter absolute cinema tahun ini dan seterusnya! tetap semangat ya kak, semoga kakak diterima jurusan ilmu komputer di universitas impian kakak! aku bakal nyusul kakak hehe. Jangan lupain aku ya kak. I love u so much 😊</p>
+  </div>
+
+  <script>
+    function tampilkanPesan() {
+      document.getElementById('pesan').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
